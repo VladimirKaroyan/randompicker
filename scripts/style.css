@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'Molot';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Molot'), url('Molot.woff') format('woff');
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+#stateee {
+    margin-left: 48%;
+}
+#state {
+    margin-left: 46%;
+    margin-bottom: 3%;
+}
+.pickbut {
+    margin-top: 10%;
+}
+#cascad {
+    font-family: 'Molot';
+}
+body {
+    background: url("../images/background.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#header {
+    border-bottom: 5px solid;
+}
+#header h1 {
+    font-family: 'Molot';
+}
+#container {
+    width: 650px;
+    height: 350px;
+    margin: auto;
+    margin-top: 10%;
+    border: 8px solid;
+    border-radius: 8px;
+}
+#boxdiv {
+    width: 60px;
+    height: 34px;
+    margin: auto;
+    margin-top: 5%;
+}
+#picktext {
+    color: blue;
+    animation: color 3s infinite alternate;
+    width: 365px;
+    height: 35px;
+    margin: auto;
+} 
+  @keyframes color {
+    33% {
+        color: green;
+    }
+    66% {
+        color: red;
+    }
+  }
+#pickt {
+    display: -webkit-inline-box;
+    font-family: "Molot";
+    text-align: center;
+    margin-top: 6%;
+    border: 5px solid;
+    padding: 10px;
+}
+#cascad {
+    font-size: 40px;
+    margin-top: 12%;
+    text-align: center;
+}
+#pickbutton {
+    width: 650px;
+    height: 79px;
+    margin: auto;
+}
+#picker {
+    background: darkorange;
+    font-size: 25px;
+    font-family: "Molot";
+    display: -webkit-inline-box;
+    border: 5px solid;
+    padding: 6px;
+    border-radius: 10px;
+    margin-left: 29%;
+    margin-top: 4%;
+    cursor: pointer;
+}
+#picker:hover {
+    background: green;
+    transition: 1s;
+}
